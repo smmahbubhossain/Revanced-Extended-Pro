@@ -18,7 +18,7 @@ jobs:
         shell: bash
         run: |
           source utils.sh
-          toml_prep "$(cat config.toml)"
+          toml_prep "$(cat config-rv-ex.toml)"
 
           is_youtube_latest() {
             t=$(toml_get_table YouTube)
@@ -38,7 +38,7 @@ jobs:
           }
 
           is_patches_latest() {
-            PATCHES_SRC=$(toml_get "$(toml_get_table "")" patches-source) || PATCHES_SRC="revanced/revanced-patches"
+            PATCHES_SRC=$(toml_get "$(toml_get_table "")" patches-source) || PATCHES_SRC="inotia00/revanced-patches"
             last_patches_url=$(wget -nv --header="Authorization: token ${{ secrets.GITHUB_TOKEN }}" -O- https://api.github.com/repos/${PATCHES_SRC}/releases/latest | json_get 'browser_download_url' | grep 'jar')
             last_patches=${last_patches_url##*/}
             cur_patches=$(sed -n 's/.*Patches: \(.*\)/\1/p' build.md | xargs)
