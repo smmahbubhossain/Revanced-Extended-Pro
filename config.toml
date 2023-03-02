@@ -13,10 +13,10 @@ rv-brand = "ReVanced Extended"
 [YouTube]
 enabled = false
 build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = "debugging"                                        # whitespace seperated list of patches to exclude (multiline strings are not supported)
+excluded-patches = ""                                        # whitespace seperated list of patches to exclude (multiline strings are not supported)
 included-patches = ""                                                 # whitespace seperated list of patches to include
 version = "auto"                                                      # 'auto', 'latest' or a custom one like '17.40.41'
-exclusive-patches = true                                             # excludes all patches by default
+exclusive-patches = false                                          # excludes all patches by default
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytpip-magisk"
 
