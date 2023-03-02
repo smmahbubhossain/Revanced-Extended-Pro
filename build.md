@@ -21,9 +21,9 @@ ETC
 - [Other Countries](https://crowdin.com/project/revancedextended)
   
 **App Versions:**  
+Music (arm64-v8a): 5.46.52  
 Music (arm-v7a): 5.46.52  
 Twitter: 9.78.0-release.0  
-Music (arm64-v8a): 5.46.52  
 Reddit: 2023.08.0  
 Twitch: 14.6.1  
 TikTok: 28.5.2  
