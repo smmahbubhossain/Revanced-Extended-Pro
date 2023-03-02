@@ -18,7 +18,7 @@ jobs:
         shell: bash
         run: |
           source utils.sh
-          toml_prep "$(cat config.toml)"
+          toml_prep "$(cat config-rv-ex.toml)"
 
           is_youtube_latest() {
             t=$(toml_get_table YouTube)
