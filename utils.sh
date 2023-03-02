@@ -6,7 +6,7 @@ TEMP_DIR="temp"
 BUILD_DIR="build"
 PKGS_LIST="${TEMP_DIR}/module-pkgs"
 
-if [ "${GITHUB_TOKEN:-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
+if [ "${GH_TOKEN:-}" ]; then GH_HEADER="Authorization: token ${GH_TOKEN}"; else GH_HEADER=; fi
 NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 REBUILD=false
 OS=$(uname -o)
