@@ -112,7 +112,7 @@ jobs:
         run: |
           cd build || echo "build folder not found"
 
-          TG_CHAT="@Revanced_Extended_Pro"
+          TG_CHAT="-1001504716526"
           NL=$'\n'
           APKS=""
           MODULES=""
