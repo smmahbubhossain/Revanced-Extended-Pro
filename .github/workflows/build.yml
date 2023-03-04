@@ -31,7 +31,7 @@ jobs:
         uses: oprypin/find-latest-tag@v1
         continue-on-error: true
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           repository: ${{ github.repository }}
           releases-only: true
 
@@ -45,7 +45,7 @@ jobs:
       - name: Build modules/APKs
         run: ./build.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
           NEXT_VER_CODE: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
 
@@ -65,7 +65,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           file: ./build/*
           release_name: ${{ steps.get_output.outputs.RELEASE_NAME }}
           tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
@@ -124,7 +124,7 @@ jobs:
       #   run: |
       #     cd build || echo "build folder not found"
 
-      #     TG_CHAT="@rvc_magisk"
+      #     TG_CHAT="@Revanced_Extended_Pro"
       #     NL=$'\n'
       #     APKS=""
       #     MODULES=""
