@@ -1,12 +1,12 @@
 class Config:
     REVANCED_APKS_RELEASE_URL = (
-        "https://api.github.com/repos/revanced-apks/build-apps/releases/latest"
+        "https://api.github.com/repos/smmahbubhossain/Revanced-Extended-Pro/releases/latest"
     )
     MICROG_RELEASE_URL = (
         "https://api.github.com/repos/TeamVanced/VancedMicroG/releases/latest"
     )
     REVANCED_CHANGES_URL = (
-        "https://api.github.com/repos/revanced/revanced-patches/compare"
+        "https://api.github.com/repos/inotia00/revanced-patches/compare"
     )
 
     NOTES = """*≣ Note:*
@@ -33,4 +33,4 @@ Magisk (Root):
 
 {credits_message}
     
-@revanced_apks_web | revanced-apks.pages.dev"""
+@Revanced_Extended_Pro | smmahbubhossain.pages.dev"""
