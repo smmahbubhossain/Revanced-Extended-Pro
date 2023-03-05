@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Sync Repo
-        run: GH_REPO: ${{ secrets.GH_REPO }} -b main
+        run: 
+          GH_REPO: ${{ secrets.GH_REPO }} -b main
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
