@@ -11,6 +11,7 @@ rv-brand = "YouTube"
 
 [YouTube]
 build-mode = "both"
+app-name = "YouTube"
 excluded-patches = "custom-branding-icon-afn-red"
 included-patches = "custom-branding-icon-mmt"
 version = "auto"
