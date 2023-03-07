@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Sync Repo
-        run: gh repo sync ${{ github.repository }}
+        run: gh repo sync ${{ github.repository }} -b main
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
