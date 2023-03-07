@@ -7,11 +7,12 @@ build-mindetach-module = true
 # extended
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "YouTube"
+rv-brand = "Revanced Extended Pro"
 
 [YouTube]
 build-mode = "both"
-excluded-patches = "custom-branding-icon-afn-red"
+app-name = "YouTube"
+excluded-patches = "custom-branding-icon-afn-red, custom-branding-icon-afn-blue, custom-branding-icon-revancify"
 included-patches = "custom-branding-icon-mmt"
 version = "auto"
 exclusive-patches = false
