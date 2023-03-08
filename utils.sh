@@ -83,8 +83,8 @@ get_prebuilts() {
 		dl_if_dne ${TEMP_DIR}/aapt2 https://github.com/rendiix/termux-aapt/raw/d7d4b4a344cc52b94bcdab3500be244151261d8e/prebuilt-binary/${arch}/aapt2
 	fi
 	mkdir -p ${MODULE_TEMPLATE_DIR}/bin/arm64 ${MODULE_TEMPLATE_DIR}/bin/arm
-	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm64/cmpr" "https://github.com/j-hc/cmpr/releases/latest/download/cmpr-arm64-v8a"
-	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm/cmpr" "https://github.com/j-hc/cmpr/releases/latest/download/cmpr-armeabi-v7a"
+	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm64/cmpr" "https://github.com/smmahbubhossain/cmpr/releases/latest/download/cmpr-arm64-v8a"
+	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm/cmpr" "https://github.com/smmahbubhossain/cmpr/releases/latest/download/cmpr-armeabi-v7a"
 
 	HTMLQ="${TEMP_DIR}/htmlq"
 	if [ ! -f "${TEMP_DIR}/htmlq" ]; then
@@ -94,7 +94,7 @@ get_prebuilts() {
 			else
 				arch=armeabi-v7a
 			fi
-			dl_if_dne ${TEMP_DIR}/htmlq https://github.com/j-hc/htmlq-ndk/releases/latest/download/htmlq-${arch}
+			dl_if_dne ${TEMP_DIR}/htmlq https://github.com/smmahbubhossain/htmlq-ndk/releases/latest/download/htmlq-${arch}
 			chmod +x $HTMLQ
 		else
 			req "https://github.com/mgdm/htmlq/releases/latest/download/htmlq-x86_64-linux.tar.gz" "${TEMP_DIR}/htmlq.tar.gz"
